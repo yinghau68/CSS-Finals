@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+header{
+   display: unset;
+}
+header section{
+    height: 150px;
+    border-style: solid;
+    text-align: center;
+    font-size: 100px;
+    font-family:'Courier New', Courier, monospace;
+}
+nav{
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    margin-bottom: 55px;
+    background-color: rgb(87, 194, 87);
+}
+nav ul{
+    display: flex;
+    margin-left: 78%;
+}
+nav li{
+    margin: 0px;
+    padding: 25px;
+    color: white;
+    list-style: none;
+}
+
+main{
+    padding-left: 80px;
+}
+main section{
+    display: grid;
+    row-gap: 150px;
+    grid-template-areas: 
+    "500px 500px"
+    "500px 500px";
+}
+main section p{
+    margin-top: 50px;
+    width: 450px;
+}
+.one{
+    display: flex;    
+    height: 300px;
+    width: 50px;
+    background-color: black;
+}
+.two{
+    display: flex;
+    height: 300px;
+    width: 50px;
+    background-color: gray;
+}
+
+#top-button{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 80px;
+    width: 80px;
+
+    border-radius: 50%;
+    background-color: green;
+
+    text-align: center;
+}
+#top-button h1{
+    display:inline-block;
+    margin-top:auto;
+    margin-bottom: auto;
+}
