@@ -13,7 +13,7 @@ a{
 header{
    display: unset;
 }
-header section{
+header article{
     height: 150px;
     border-style: solid;
     text-align: center;
@@ -56,8 +56,11 @@ nav li:hover{
 
 
 main{
-    padding-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 160px;
     padding-right: 100px;
+    width: 1200px;
 }
 #recommendation{
     font-size: 60px;
@@ -80,34 +83,60 @@ main a{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.one{
+.book{
     display: flex;    
     height: 300px;
 }
-
+.book-details{
+    margin-left: 20px;
+}
 
 #classics{
     display: flex;
+    padding: 25px;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
+
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(46, 0, 20);
+}
+#classics-title{
+    font-size: 50px;
 }
 #classics-items{
     display: flex;
 }
 .classics-items{
     margin-left: 50px;
+    color: white;
 
 }
 
+.category{
+    margin-bottom: 50px;
+}
+.category-title{
+    font-size: 35px;
+}
+.books{
+    display: grid;
+    column-gap: 60px;
+    row-gap: 50px;
+    grid-template-areas: 
+    "450px 450px 450px";
+}
 
-#all{
+/*#all{
     display: grid;
     column-gap: 60px;
     row-gap: 50px;
     grid-template-areas: 
     "450px 450px 450px"
     "450px 450px 450px";
-}
+}*/
+
 
 
 #top-button{
