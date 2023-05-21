@@ -60,6 +60,7 @@ nav li:hover {
 }
 
 .container {
+<<<<<<< Updated upstream
     min-height: 850px;
     width: auto;
 
@@ -103,4 +104,23 @@ main {
 .a {
     grid-area: test1;
     background-color: blue;
+=======
+    margin: 10px;
+    min-height: 850px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 35% 1fr;
+    grid-template-areas:
+        "side TPcontent"
+        "otherside content";
+    grid-gap: 5px;
+}
+
+aside {
+    grid-area: side;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 5%;
+>>>>>>> Stashed changes
 }
