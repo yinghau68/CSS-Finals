@@ -58,3 +58,49 @@ nav li {
 nav li:hover {
     color: rgb(223, 222, 222);
 }
+
+.container {
+    min-height: 850px;
+    width: auto;
+
+    display: grid;
+    grid-template-rows: 30% 1fr;
+    grid-template-columns: 20% 1fr;
+    grid-gap: 5px 5px;
+
+    grid-template-areas:
+        "side content"
+        "otherside content";
+    margin: 10px;
+}
+
+.side {
+    grid-area: side;
+    background-color: aqua;
+}
+
+main {
+    grid-area: content;
+    background-color: beige;
+}
+
+.maincon {
+    min-height: 750px;
+    width: auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px 5px;
+
+    grid-template-areas:
+        "test1 test2"
+        "test3 test4";
+    margin: 10px;
+
+}
+
+.a {
+    grid-area: test1;
+    background-color: blue;
+}
