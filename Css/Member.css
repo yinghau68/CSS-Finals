@@ -94,21 +94,36 @@ main {
     width: auto;
 
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 1fr;
+    grid-template-columns: 40% 1fr;
     grid-gap: 5px 5px;
 
     grid-template-areas:
         "test1 test2"
-        "test3 test4";
+        "test3 test3";
     margin: 0px 30px 30px 30px;
     border-radius: 10px;
+
 }
 
 .content1 {
     grid-area: test1;
-    background-color: blue;
+    background-color: beige;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2 {
+    grid-area: test2;
+    background-color: beige;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
 }
 
 .flex-aside {
@@ -126,4 +141,28 @@ main {
 
 .flex-aside a:hover {
     background-color: #6BA292;
+}
+
+/*Home*/
+#top-button {
+    display: flex;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 80px;
+    width: 80px;
+
+    border-radius: 50%;
+    background-color: rgb(217, 181, 175);
+
+    align-items: center;
+    text-align: center;
+}
+
+main article section img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
