@@ -59,22 +59,71 @@ nav li:hover {
     color: rgb(223, 222, 222);
 }
 
-.container {
-
-    min-height: 850px;
-    width: auto;
+/*----------右下方商品導覽----------*/
+#products {
+    grid-area: asideTwo;
 
     display: grid;
-    grid-template-rows: 20% 1fr;
-    grid-template-columns: 10% 1fr;
-    grid-gap: 5px 5px;
 
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-        "side content"
-        "otherside content";
+        "aside1"
+        "aside2"
+        "aside3";
+
+}
+
+#products h1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#products img {
+    border-radius: 5%;
+    display: block;
+    padding: 5px;
+}
+
+.products {
+    display: flex;
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+#products h1 {
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 20px;
+}
+
+#products h3 {
+    font-size: 20px;
+    text-align: right;
+}
+
+.products1 {
+    grid-area: aside2;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5%;
+    margin: 10px;
+
+}
+
+.products2 {
+    grid-area: aside3;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5%;
     margin: 10px;
 }
 
+/*---------- 左方導引 ----------*/
 .side {
     grid-area: side;
     background-color: aqua;
@@ -84,9 +133,29 @@ nav li:hover {
     font-size: 20px;
 }
 
+/*--------- 主要Grid ---------- */
+.container {
+
+    min-height: 850px;
+    width: auto;
+
+    display: grid;
+    grid-template-rows: 20% 1fr 5%;
+    grid-template-columns: 10% 1fr 25%;
+    grid-gap: 5px 5px;
+
+    grid-template-areas:
+        "side content aside"
+        "otherside content asideTwo";
+    margin: 10px;
+}
+
+/*--------- 中間內容 ---------- */
 main {
     grid-area: content;
     background-color: beige;
+    border: 1px solid brown;
+    border-radius: 10px;
 }
 
 .maincont {
@@ -94,16 +163,25 @@ main {
     width: auto;
 
     display: grid;
-    grid-template-rows: 40% 1fr;
+    grid-template-rows: 10% 40% 1fr;
     grid-template-columns: 40% 1fr;
     grid-gap: 5px 5px;
 
     grid-template-areas:
+        "test0 test0"
         "test1 test2"
-        "test3 test3";
+        "test3 test4";
     margin: 0px 30px 30px 30px;
     border-radius: 10px;
 
+}
+
+.content0 {
+    grid-area: test0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
 .content1 {
@@ -113,6 +191,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+    margin: 20px;
 }
 
 .content2 {
@@ -121,25 +201,33 @@ main {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
+    flex-direction: column;
+    padding: 10px;
 
+}
+
+.content3 {
+    grid-area: test3;
+    margin: 30px 0px 0px 2cm;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .flex-aside {
     margin: 5px;
     display: flex;
     flex-direction: column;
+    list-style: none;
 }
 
-.flex-aside a {
+.flex-aside li {
     padding: 5px;
     border-radius: 10%;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.flex-aside a:hover {
+.flex-aside li:hover {
     background-color: #6BA292;
 }
 
@@ -165,4 +253,13 @@ main article section img {
     margin: 10px;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.Mebfont {
+    font-size: 25px;
+
+}
+
+.pSpace {
+    white-space: pre;
 }
