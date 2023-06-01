@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/Css/Record.css">
     <script src='assets/Js/Member.js'></script>
+
 
 </head>
 
@@ -36,7 +38,7 @@
         <!----------左方導引按鈕---------->
     <div class="container">
         <div class="side">
-            <ul class="flex-aside tab-menu">
+            <ul class="flex-aside">
                 <li id="1" class="active" onclick="changeMain(event);">基本資料</li>
 
                 <li id="2" onclick="changeMain(event);">購買紀錄</li>
@@ -48,179 +50,132 @@
 
 
         <!----------右下方商品導覽---------->
-        <div id="products">
-            <h1>recommend</h1><br>
-                <div class="products1">
-                    <a href=""><div class="products"><img src="https://picsum.photos/200/300">
+    <div id="products">
+        <!-- <h1>recommend</h1><br> -->
+            <div class="products1">
+                <a href=""><div class="products"><img src="https://picsum.photos/200/300">
+                    <div>
+                        <h2>格林童話故事小百科Q</h2><br>
+                        <p>大量範例＋實作練習＋遊戲專案, 密集式範例學習最有效！
+                            主題最完整！保證紮穩物件導向程式設計基礎！</p><br>
+                        <h3>NT 100</h3>
+                    </div>
+                </div></a>
+            </div>
+            <div class="products2">
+                <a href="">
+                    <div class="products">
+                        <img src="https://picsum.photos/200/300">
                         <div>
                             <h2>格林童話故事小百科Q</h2><br>
                             <p>大量範例＋實作練習＋遊戲專案, 密集式範例學習最有效！
                                 主題最完整！保證紮穩物件導向程式設計基礎！</p><br>
                             <h3>NT 100</h3>
                         </div>
-                    </div></a>
-                </div>
-
-                <div class="products2">
-                    <a href="">
-                        <div class="products">
-                            <img src="https://picsum.photos/200/300">
-                            <div>
-                                <h2>格林童話故事小百科Q</h2><br>
-                                <p>大量範例＋實作練習＋遊戲專案, 密集式範例學習最有效！
-                                    主題最完整！保證紮穩物件導向程式設計基礎！</p><br>
-                                <h3>NT 100</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-        </div>
-
-        <!----------基本資料位置---------->
-        <main id="main1">
-          <article class="maincont">
-            <div class="content0">
-                <h1>基本資料</h1>
+                    </div>
+                </a>
             </div>
-            <section class="content1">
-                <img src="img/member/myself.jpg" alt="">
-            </section>
-
-            <section class="content2">
-                <ul class="Mebfont">
-                    <li>
-                        <p>姓名: 羅賴把爵士</p>
-                    </li><br>
-
-                    <li>
-                        <p>生日: 2023年 5月 27日</p>
-                    </li><br>
-
-                    <li>
-                        <p>住址: 奥林匹斯山 只有地號沒有地址</p>
-                    </li><br>
-
-                    <li><p>E-mail: MrRoraiba@gmail.com</p></li><br>
-                </ul>
-            </section>
-
-            <section class="content3">
-                <ul class="Mebfont">
-                    <li>
-                        <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
-                    </li><br>
-                    <li>
-                        <p>繳費方式: 信用卡</p>
-                    </li><br>
-                    <li>
-                        <p>載具號碼: /ABC123</p>
-                    </li><br>
-                    
-                </ul>
-            </section>
-
-          </article>
-          <article>
+    </div>
+        <!----------基本資料位置---------->
+    <main id="main1">
+      <article class="maincont">
+        <div class="content0">
+            <h1>基本資料</h1>
+        </div>
+        <section class="content1">
+            <img class="MebImg" src="img/member/myself.jpg" alt="">
+        </section>
+        <section class="content2">
+            <ul class="Mebfont">
+                <li>
+                    <p>姓名: 羅賴把爵士</p>
+                </li><br>
+                <li>
+                    <p>生日: 2023年 5月 27日</p>
+                </li><br>
+                <li>
+                    <p>住址: 奥林匹斯山 只有地號沒有地址</p>
+                </li><br>
+                <li><p>E-mail: MrRoraiba@gmail.com</p></li><br>
+            </ul>
+        </section>
+        <section class="content3">
             
-          </article>
+            <ul class="Mebfont">
+                <li>
+                    <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
+                </li><br>
+                <li>
+                    <p>繳費方式: 信用卡</p>
+                </li><br>
+                <li>
+                    <p>載具號碼: /ABC123</p>
+                </li><br>
+            </ul>
+        </section>
+        <div class="mainButton"><h1>更改資料</h1></div>
+      </article>
+    </main>
 
-          <article></article>
+
+    <!----------購買紀錄位置---------->
+    <main id="main2">
+      <article class="mainContRE">
+        <div class="contentRe0">
+            <h1>購買紀錄</h1>
+        </div>
+        <section class="contentRe1">
+            <div class="mReGrid">
+                <div class="reImg">
+                    <img class="reImg" src="img/literature/En.jpg" alt="">
+                </div>
+                <div class="reP">
+                    <p>購買書名: 基督山恩仇記</p><br>
+                    <p>購買時間: 2023 / 06 / 2 </p><br>
+                    <p>購買方式: 取貨付款</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section></section>
+        <section></section>
+      <!-------------評價位置------------->
+    <main id="main3" style="display: none;">
+      <article class="maincont">
+                <section class="content1">
+                    <img src="img/member/myself.jpg" alt="">
+                </section>
+                <section class="content2">
+                    <ul class="Mebfont">
+                        <li>
+                            <p>姓名: 羅賴把爵士3</p>
+                        </li><br>
+                        <li>
+                            <p>生日: 2023年 5月 27日</p>
+                        </li><br>
+                        <li>
+                            <p>住址: 奥林匹斯山 只有地號沒有地址</p>
+                        </li><br>
+                        <li><p>E-mail: MrRoraiba@gmail.com</p></li><br>
+                    </ul>
+                </section>
+                <section class="content3">
+                    <ul class="Mebfont">
+                        <li>
+                            <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
+                        </li><br>
+                        <li>
+                            <p>繳費方式: 信用卡</p>
+                        </li><br>
+                        <li>
+                            <p>載具號碼: /ABC123</p>
+                        </li><br>
+
+                    </ul>
+                </section>
+            </article>
         </main>
-        <!----------購買紀錄位置---------->
-        <main id="main2" style="display: none;">
-            <article class="maincont">
-  
-              <section class="content1">
-                  <img src="img/member/myself.jpg" alt="">
-              </section>
-  
-              <section class="content2">
-                  <ul class="Mebfont">
-                      <li>
-                          <p>姓名: 羅賴把爵士2</p>
-                      </li><br>
-  
-                      <li>
-                          <p>生日: 2023年 5月 27日</p>
-                      </li><br>
-  
-                      <li>
-                          <p>住址: 奥林匹斯山 只有地號沒有地址</p>
-                      </li><br>
-  
-                      <li><p>E-mail: MrRoraiba@gmail.com</p></li><br>
-                  </ul>
-              </section>
-  
-              <section class="content3">
-                  <ul class="Mebfont">
-                      <li>
-                          <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
-                      </li><br>
-                      <li>
-                          <p>繳費方式: 信用卡</p>
-                      </li><br>
-                      <li>
-                          <p>載具號碼: /ABC123</p>
-                      </li><br>
-                      
-                  </ul>
-              </section>
-  
-            </article>
-            <article>
-            </article>
-  
-            <article></article>
-          </main>
-
-          <!----------評價位置---------->
-          <main id="main3" style="display: none;">
-            <article class="maincont">
-  
-              <section class="content1">
-                  <img src="img/member/myself.jpg" alt="">
-              </section>
-  
-              <section class="content2">
-                  <ul class="Mebfont">
-                      <li>
-                          <p>姓名: 羅賴把爵士3</p>
-                      </li><br>
-  
-                      <li>
-                          <p>生日: 2023年 5月 27日</p>
-                      </li><br>
-  
-                      <li>
-                          <p>住址: 奥林匹斯山 只有地號沒有地址</p>
-                      </li><br>
-  
-                      <li><p>E-mail: MrRoraiba@gmail.com</p></li><br>
-                  </ul>
-              </section>
-  
-              <section class="content3">
-                  <ul class="Mebfont">
-                      <li>
-                          <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
-                      </li><br>
-                      <li>
-                          <p>繳費方式: 信用卡</p>
-                      </li><br>
-                      <li>
-                          <p>載具號碼: /ABC123</p>
-                      </li><br>
-                      
-                  </ul>
-              </section>
-  
-            </article>
-            <article>
-            </article>
-  
-            <article></article>
-          </main>
     </div>
 
 
