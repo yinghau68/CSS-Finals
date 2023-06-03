@@ -1,0 +1,105 @@
+.mainContRE {
+    min-height: 850px;
+    width: auto;
+
+    display: grid;
+    grid-template-rows: 10% 25% 25% 25%;
+    grid-template-columns: 1fr;
+    grid-gap: 5px 5px;
+
+    grid-template-areas:
+        "mGridRe0"
+        "mGridRe1"
+        "mGridRe2"
+        "mGridRe3"
+        "mGridRe4";
+    /* margin: 0px 30px 30px 30px; */
+    border-radius: 10px;
+
+}
+
+.mReGrid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 5px 5px;
+    grid-template-areas:
+        "cardRe cardRe2";
+
+}
+
+
+.contentRe0 {
+    grid-area: mGridRe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.contentRe1 {
+    grid-area: mGridRe1;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.contentRe2 {
+    grid-area: mGridRe2;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.contentRe3 {
+    grid-area: mGridRe3;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+.reImg {
+    grid-area: cardRe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10%;
+
+
+}
+
+.reP {
+    grid-area: cardRe2;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.rePr {
+    grid-area: cardRe2;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    text-align: right;
+    margin: 0px 40px 20px 0px;
+}
+
+.valButton {
+    grid-area: mGridRe4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.valButton div {
+    font-size: 20px;
+    margin: 10px 10px 20px 10px;
+}
