@@ -1,0 +1,60 @@
+.mainContCom {
+    min-height: 850px;
+    width: auto;
+
+    display: grid;
+    grid-template-rows: 10% 40% 40% 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px 5px;
+
+    grid-template-areas:
+        "mGridCom0"
+        "mGridCom1"
+        "mGridCom2"
+        "mGridCom3"
+        "mGridCom4";
+    /* margin: 0px 30px 30px 30px; */
+    border-radius: 10px;
+
+}
+
+.mComGrid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 5px 5px;
+    grid-template-areas:
+        "cardCom cardCom2";
+}
+
+.contentCom0 {
+    grid-area: mGridCom0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.contentCom1 {
+    grid-area: mGridCom1;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.contentCom2 {
+    grid-area: mGridCom2;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.contentCom3 {
+    grid-area: mGridCom3;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
