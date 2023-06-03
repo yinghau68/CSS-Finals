@@ -179,7 +179,6 @@ main {
 .maincont {
     min-height: 850px;
     width: auto;
-
     display: grid;
     grid-template-rows: 10% 40% 1fr;
     grid-template-columns: 40% 1fr;
