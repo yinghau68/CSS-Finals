@@ -222,12 +222,19 @@ main{
 #comments{
     width: 60%;
 }
+
 #products{
-    
     width: 40%;
 }
 .product-wrapper{
     display: flex;
+    margin: 15px 0;
+ 
+}
+.book-image-container img{
+    object-fit: cover;
+    width: 150px;
+    height: 100%;
 }
 .products{
     height: 200px;
@@ -237,7 +244,4 @@ main{
 }
 .products h1{
     margin-bottom: 15px;
-}
-#products img{
-    height: 200px;
 }
