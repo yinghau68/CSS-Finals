@@ -223,6 +223,7 @@ main{
     width: 60%;
 }
 #products{
+    
     width: 40%;
 }
 .product-wrapper{
@@ -233,6 +234,9 @@ main{
     margin-left: 10px;
     margin-bottom: 25px;
     text-align:justify;
+}
+.products h1{
+    margin-bottom: 15px;
 }
 #products img{
     height: 200px;
