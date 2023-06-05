@@ -1,0 +1,10 @@
+檔案名稱 不可以有空； 例如：“file folder”.
+檔案名稱 也不可以有”_“; 例如: "file_folder".
+
+正確 src/href:
+例如： src="Pages/Folder"
+例如: src="./Page/"
+例如: src="../../../Page"
+
+錯 src/href:
+例如: src="/Page/"
