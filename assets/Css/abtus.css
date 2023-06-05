@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: unset;
+}
+
+header article {
+    height: 150px;
+    border-style: solid;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h1 {
+    color: rgb(107, 162, 146)
+}
+
+nav {
+    display: flex;
+    /* Makes list horizontal */
+    position: sticky;
+    top: 0;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    align-items: center;
+    justify-content: space-between;
+    /* For seperating list */
+
+    margin-bottom: 55px;
+    background-color: rgb(179, 106, 94);
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav li {
+    margin: 0px;
+    padding: 25px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+
+nav li:hover {
+    color: rgb(223, 222, 222);
+}
+
+.photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    background-color: rgb(107, 162, 146);
+    color: aliceblue;
+    width: 30%;
+    text-align: center;
+    padding: 25px;
+    float: left;
+}
+
+.fb {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+}
