@@ -10,11 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/Css/Record.css">
-    <link rel="stylesheet" href="assets/Css/Comments.css">
-    <!-- <link rel="stylesheet" href="Pages/Product Page/grimmbig/productpage_style.css"> -->
     <script src='assets/Js/Member.js'></script>
-    <script src="https://kit.fontawesome.com/fe180fa5ae.js" crossorigin="anonymous"></script>
-    
+
+
 </head>
 
 <body>
@@ -30,9 +28,9 @@
                 <a href="#computer-languages" target=""><li>電腦語言</li></a>
             </ul>
             <ul>
-                <a href="register.html"><li>注冊</li></a>
-                <a href="login.html"><li>登入</li></a>
-                <a href="abtus.html"><li>關於我們</li></a>
+                <a href=""><li>注冊</li></a>
+                <a href="Member.html"><li>登入</li></a>
+                <a href=""><li>關於我們</li></a>
                
             </ul>
         </nav>
@@ -56,8 +54,8 @@
     <div id="products">
         <!-- <h1>recommend</h1><br> -->
             <div class="products1">
-                <a href=""><div class="products"><img src="https://picsum.photos/200/300">
-                    <div>
+                <a href=""><div class="products"><img class="img-resize" src="https://picsum.photos/200/300">
+                    <div class="products-description">
                         <h2>格林童話故事小百科Q</h2><br>
                         <p>大量範例＋實作練習＋遊戲專案, 密集式範例學習最有效！
                             主題最完整！保證紮穩物件導向程式設計基礎！</p><br>
@@ -68,8 +66,8 @@
             <div class="products2">
                 <a href="">
                     <div class="products">
-                        <img src="https://picsum.photos/200/300">
-                        <div>
+                        <img class="img-resize" src="https://picsum.photos/200/300">
+                        <div class="products-description">
                             <h2>格林童話故事小百科Q</h2><br>
                             <p>大量範例＋實作練習＋遊戲專案, 密集式範例學習最有效！
                                 主題最完整！保證紮穩物件導向程式設計基礎！</p><br>
@@ -79,163 +77,147 @@
                 </a>
             </div>
     </div>
- 
+        <!----------基本資料位置---------->
+    <main id="main1">
+      <article class="maincont">
+        <div class="content0">
+            <h1>基本資料</h1>
+        </div>
+        <section class="content1">
+            <img class="MebImg" src="img/member/myself.jpg" alt="">
+        </section>
+        <section class="content2">
+            <ul class="Mebfont no-list">
+                <li>
+                    <p><b>姓名:</b> 羅賴把爵士</p>
+                </li><br>
+                <li>
+                    <p><b>生日:</b> 2023年 5月 27日</p>
+                </li><br>
+                <li>
+                    <p><b>住址:</b> 奥林匹斯山 只有地號沒有地址</p>
+                </li><br>
+                <li><p><b>Email:</b> MrRoraiba@gmail.com</p></li><br>
+            </ul>
+        </section>
+        <section class="content3">
+            
+            <ul class="Mebfont">
+                <li>
+                    <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
+                </li><br>
+                <li>
+                    <p>繳費方式: 信用卡</p>
+                </li><br>
+                <li>
+                    <p>載具號碼: /ABC123</p>
+                </li><br>
+            </ul>
+        </section>
+        <div class="mainButton"><h1>更改資料</h1></div>
+      </article>
+    </main>
+
+
     <!----------購買紀錄位置---------->
     <main id="main2">
       <article class="mainContRE">
-            <div class="contentRe0">
-                <h1>購買紀錄</h1>
+        <div class="contentRe0">
+            <h1>購買紀錄</h1>
+        </div>
+        <section class="contentRe1">
+            <div class="mReGrid">
+                <div>
+                    <img  class="reImg" src="img/literature/En.jpg" alt="">
+                </div>
+                
+                <div class="reP">
+                    <p><b>購買書名:</b> 基督山恩仇記</p><br>
+                    <p><b>購買時間:</b> 2023 / 06 / 2 </p><br>
+                    <p><b>購買方式:</b> 取貨付款</p><br>
+                    <p><b>件數:</b> 1</p>
+                </div>
+
+                <div class="rePr"><p><b>總價格:</b> NT 399</p></div>
             </div>
-            <section class="contentRe1">
-                <div class="mReGrid">
-                    <div>
-                        <img  class="reImg" src="img/Bliterature/En.jpg" alt="">
-                    </div>
-                    
-                    <div class="reP">
-                        <p>購買書名: 基督山恩仇記</p><br>
-                        <p>購買時間: 2023 / 06 / 2 </p><br>
-                        <p>購買方式: 取貨付款</p><br>
-                        <p>件數: 1</p>
-                    </div>
+        </section>
 
-                    <div class="rePr"><p>總價格:$ 399</p></div>
+
+        <section class="contentRe2">
+            <div class="mReGrid">
+                <div>
+                    <img class="reImg" src="img/literature/En2.jpg" alt="">
                 </div>
-            </section>
-
-
-            <section class="contentRe2">
-                <div class="mReGrid">
-                    <div>
-                        <img class="reImg" src="img/literature/En2.jpg" alt="">
-                    </div>
-                    
-                    <div class="reP">
-                        <p>購買書名: 茶花女</p><br>
-                        <p>購買時間: 2023 / 06 / 3 </p><br>
-                        <p>購買方式: 取貨付款</p><br>
-                        <p>件數: 2</p>
-                    </div>
-                    
-                    <div class="rePr"><p>總價格:$ 800</p></div>
+                
+                <div class="reP">
+                    <p><b>購買書名:</b> 茶花女</p><br>
+                    <p><b>購買時間:</b> 2023 / 06 / 3 </p><br>
+                    <p><b>購買方式:</b> 取貨付款</p><br>
+                    <p><b>件數:</b> 2</p>
                 </div>
-            </section>
+                
+                <div class="rePr"><p><b>總價格:</b> NT 800</p></div>
+            </div>
+        </section>
 
-            <section class="contentRe3">
-                <div class="mReGrid">
-                    <div>
-                        <img class="reImg" src="img/literature/Jp.jpg" alt="">
-                    </div>
-                    
-                    <div class="reP">
-                        <p>購買書名: 金閣寺</p><br>
-                        <p>購買時間: 2023 / 06 / 3 </p><br>
-                        <p>購買方式: 取貨付款</p><br>
-                        <p>件數: 1</p>
-                    </div>
-                    
-                    <div class="rePr"><p>總價格:$ 199</p></div>
+        <section class="contentRe3">
+            <div class="mReGrid">
+                <div>
+                    <img class="reImg" src="img/literature/Jp.jpg" alt="">
                 </div>
-            </section>
+                
+                <div class="reP">
+                    <p><b>購買書名:</b> 金閣寺</p><br>
+                    <p><b>購買時間:</b> 2023 / 06 / 3 </p><br>
+                    <p><b>購買方式:</b> 取貨付款</p><br>
+                    <p><b>件數:</b> 1</p>
+                </div>
+                
+                <div class="rePr"><p><b>總價格:</b> NT 199</p></div>
+            </div>
+        </section>
 
-            <section class="valButton">
-                <div><<</div>
-                <div>1</div>
-                <div>>></div>
-            </section>
-        </article>
-    </main>
+        <section class="valButton">
+            <div><<</div>
+            <div>1</div>
+            <div>>></div>
+        </section>
       <!-------------評價位置------------->
-    <main id="main3">
-            <article class="mainContCom">
-              <section  class="conCom0">
-                    <h1>Comments</h1>
-              </section>
-
-              <section class="mComGrid1">
-                <div class="comImg">
-                   <img src="img/member/myself.jpg" alt="">
-                </div>
-                <div class="comP">
-                        <h1>書名: 基督山恩仇記</h1>
-                        <div class="comPi">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>內容有趣刺激，且冊數眾多，頁數剛好，非常適合用來墊泡麵</p>
- 
-                </div>
-              </section>
-
-              <section class="mComGrid2">
-                <div class="comImg">
+    <main id="main3" style="display: none;">
+      <article class="maincont">
+                <section class="content1">
                     <img src="img/member/myself.jpg" alt="">
-                 </div>
-                 <div class="comP">
-                         <h1>書名: 人間失格</h1>
-                         <div class="comPi">
-                             <i class="fa-solid fa-star"></i>
-                             <i class="fa-solid fa-star"></i>
-                             <i class="fa-solid fa-star"></i>
-                             <i class="fa-solid fa-star"></i>
- 
-                         </div>
-                         <p>好笑幽默，主角的人生哲學有趣且充滿道理，推薦想放鬆心情的您</p>
-                 </div>
-              </section>
+                </section>
+                <section class="content2">
+                    <ul class="Mebfont">
+                        <li>
+                            <p>姓名: 羅賴把爵士3</p>
+                        </li><br>
+                        <li>
+                            <p>生日: 2023年 5月 27日</p>
+                        </li><br>
+                        <li>
+                            <p>住址: 奥林匹斯山 只有地號沒有地址</p>
+                        </li><br>
+                        <li><p>E-mail: MrRoraiba@gmail.com</p></li><br>
+                    </ul>
+                </section>
+                <section class="content3">
+                    <ul class="Mebfont">
+                        <li>
+                            <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
+                        </li><br>
+                        <li>
+                            <p>繳費方式: 信用卡</p>
+                        </li><br>
+                        <li>
+                            <p>載具號碼: /ABC123</p>
+                        </li><br>
 
-              <section class="valButtonCom">
-                <div><<</div>
-                <div>1</div>
-                <div>>></div>
-            </section>
+                    </ul>
+                </section>
             </article>
         </main>
-
-               <!----------基本資料位置---------->
-    <main id="main1">
-        <article class="maincont">
-          <div class="content0">
-              <h1>基本資料</h1>
-          </div>
-          <section class="content1">
-              <img class="MebImg" src="img/member/myself.jpg" alt="">
-          </section>
-          <section class="content2">
-              <ul class="Mebfont">
-                  <li>
-                      <p>姓名: 羅賴把爵士</p>
-                  </li><br>
-                  <li>
-                      <p>生日: 2023年 5月 27日</p>
-                  </li><br>
-                  <li>
-                      <p>住址: 奥林匹斯山 只有地號沒有地址</p>
-                  </li><br>
-                  <li><p>E-mail: MrRoraiba@gmail.com</p></li><br>
-              </ul>
-          </section>
-          <section class="content3">
-              
-              <ul class="Mebfont">
-                  
-                  <li>
-                      <p class="pSpace">市話: 0800-091-000            行動: 0912345678</p>
-                  </li><br>
-                  <li>
-                      <p>繳費方式: 信用卡</p>
-                  </li><br>
-                  <li>
-                      <p>載具號碼: /ABC123</p>
-                  </li><br>
-              </ul>
-          </section>
-            <a href="update.html"><div class="mainButton"><h1>更改資料</h1></div></a>
-        </article>
-      </main>
     </div>
 
 
