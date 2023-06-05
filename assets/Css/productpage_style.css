@@ -95,6 +95,7 @@ main{
     display: flex;
     justify-content: center;
     width: 300px;
+    margin-top: -10px;
     
 }
 #img-select img{
