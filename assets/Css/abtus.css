@@ -9,17 +9,20 @@ header {
 }
 
 header article {
+    justify-content: center;
     height: 150px;
     border-style: solid;
-    text-align: center;
     font-size: 100px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 header h1 {
-    color: rgb(107, 162, 146)
+    display: inline;
+    color: rgb(107, 162, 146);
 }
-
+header a{
+    text-decoration: none;
+}
 nav {
     display: flex;
     /* Makes list horizontal */
@@ -41,7 +44,9 @@ nav ul {
     display: flex;
 
 }
-
+nav ul a{
+    text-decoration: none;
+}
 nav li {
     margin: 0px;
     padding: 25px;
@@ -53,24 +58,52 @@ nav li {
 nav li:hover {
     color: rgb(223, 222, 222);
 }
-
+main{
+    display: grid;
+    grid-template-areas: 
+    "450px 450px 450px";
+}
+/*----------Cards-----------*/
+article{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.card{
+    margin-top: -55px;
+    padding: 25px;
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    min-height: 100%;
+    text-align: center;
+    
+    /*float: left;*/
+    color: aliceblue;
+    background-color: rgb(107, 162, 146);
+    border: 1px solid white;
+}
 .photo {
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
-
-.card {
-    background-color: rgb(107, 162, 146);
-    color: aliceblue;
-    width: 30%;
-    text-align: center;
-    padding: 25px;
-    float: left;
-}
-
 .fb {
+
+    bottom: 0px;
+    text-align: center;
     width: 60px;
     height: 60px;
     border-radius: 30%;
+}
+.ud-icon{
+    display: flex;
+    justify-content: center;
+    
+}
+#icon2{
+    margin-top: 144px;
+}
+#icon3{
+    margin-top: 103px;
 }
