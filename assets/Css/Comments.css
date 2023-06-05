@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 30% 1fr;
     grid-gap: 5px 5px;
+    background-color: #bee9e8;
 
     grid-template-areas:
         "cardCom cardCom2";
@@ -35,7 +36,7 @@
     display: grid;
     grid-template-columns: 30% 1fr;
     grid-gap: 5px 5px;
-
+    background-color: #bee9e8;
     grid-template-areas:
         "cardCom cardCom2";
     border: 1px solid black;
