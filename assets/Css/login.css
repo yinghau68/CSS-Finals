@@ -49,6 +49,7 @@ nav li {
     font-size: 20px;
     color: rgb(255, 255, 255);
     list-style: none;
+    text-decoration: none;
 }
 
 nav li:hover {
