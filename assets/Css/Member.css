@@ -171,10 +171,22 @@ nav li:hover {
 }
 
 /*--------- 基本資料內容 ---------- */
-main {
+.mainMe {
     grid-area: content;
-    background-color: beige;
+    background-color: #f6f4d2;
     border: 1px solid brown;
+    border-radius: 10px;
+}
+
+.mainRe {
+    grid-area: content;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mainCom {
+    grid-area: content;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -202,11 +214,14 @@ main {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .content1 {
     grid-area: mGrid1;
-    background-color: beige;
+    background-color: #e9ecef;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -267,19 +282,19 @@ main {
     white-space: pre;
 }
 
-.mainButton {
+.mainButton2 {
     grid-area: mGrid4;
     display: flex;
     align-items: flex-end;
     margin: 0px 0px 1cm 1cm;
 }
 
-.mainButton h1 {
+.mainButton2 h1 {
     border: 1px solid black;
     padding: 5px;
     border-radius: 10%;
 }
 
-.mainButton h1:hover {
+.mainButton2 h1:hover {
     color: brown;
 }
